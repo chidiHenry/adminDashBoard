@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 
 #container{
 display: grid;
@@ -29,7 +32,10 @@ margin-bottom: 3vh;
 #header{
  background-color: white;
  margin-right: 5vw;
- border: 1px solid rebeccapurple;
+ border: 1px solid white;
+ display: grid;
+ grid-template-columns: auto auto;
+ grid-template-rows: auto auto;
  
 }
 
@@ -74,3 +80,47 @@ img{
     position: relative;
     bottom: 2vh;
  }
+
+ #searchBox{
+  border: 1px solid white;
+ }
+
+ #topLogo{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 2vw 2vw auto;
+    grid-template-rows: 1vh;
+    gap: 10px;
+    
+ }
+ #bottomLogo{
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 3vw auto;
+    
+ }
+ 
+ #navButtons{
+    border: 1px solid white;
+    
+    
+ }
+ #buttonContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5vh;
+    
+     
+ }
+button{
+    border-radius: 5%;
+    background-color: #0096FF;
+    color: #fff;
+    margin: 10px;
+    
+}
+input{
+    width: 30vw;
+    border-radius: 10px;
+    background-color: burlywood;
+}
