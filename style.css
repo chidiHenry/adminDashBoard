@@ -7,16 +7,28 @@ display: grid;
 grid-template-columns: 20vw 80vw;
 grid-template-rows: 100vh;
 max-width: 80vw;
-max-height: 90vh;
+max-height: 100%;
 margin-top: 3vh; 
 margin-bottom: 3vh;
 
 
+
+}
+
+#projects{
+   font-weight: bold;
+   margin-left: 2vw;
+   /* margin-top: 2vh; */
+   margin-bottom: 2vh;
 }
 #sidebar{
     background-color: #0096FF;
     margin-left: 5vw;
     margin-bottom: 3vh;
+}
+
+#sidebar img{
+   width: 2vw;
 }
 
 #main{
@@ -38,14 +50,40 @@ margin-bottom: 3vh;
  grid-template-rows: auto auto;
  
 }
+#header img{
+   width: 2vw;
+}
 
 #body{
- background-color: burlywood;
+ background-color: #d0e3ee;
  margin-right: 5vw;
  margin-bottom: 3vh;
- 
+ display: grid;
+ grid-template-columns: 70% auto;
+ grid-template-rows: 7% auto;
 
 }
+.projectText{
+   background-color: #fff;
+   padding-top: 3vh;
+   padding-left: 2vw;
+   padding-right: 2vw;
+    border-left: 2px solid goldenrod; 
+   border-radius: 3%;
+   margin: 5px;
+
+}
+#projectContainer{
+ display: grid;
+ grid-template-columns: auto auto ;
+ grid-template-rows: auto auto auto;
+}
+.projectHeadings{
+   display: block;
+   font-weight: bolder;
+}
+
+
 #dashboardContainer{
     margin-left: 2vw;
 }
@@ -63,7 +101,7 @@ margin-bottom: 3vh;
 }
 
 img{
-    width: 2vw;
+    /* width: 2vw; */
     
 }
  #home{
@@ -97,7 +135,13 @@ img{
     border: 2px solid white;
     display: grid;
     grid-template-columns: 3vw auto;
-    
+    grid-template-rows: 3vh auto;
+ }
+ #bottomImage{
+   /* border: 1px solid red; */
+   grid-row-start: 1;
+   grid-row-end: 3;
+   margin-top: 4vh;
  }
  
  #navButtons{
@@ -122,5 +166,45 @@ button{
 input{
     width: 30vw;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color: #d0e3ee;
+}
+#announcements{
+   /* text-align: center; */
+   margin-left: 2vw;
+}
+.sideText{
+   background-color: #fff;
+   padding-top: 3vh;
+   padding-left: 2vw;
+   padding-right: 2vw;
+   padding-bottom: 2vh;
+    /* border-left: 2px solid goldenrod;  */
+   border-radius: 3%;
+   margin: 5px;
+   font-size: small;
+
+}
+.sideHeadings{
+   display: block;
+   font-weight:bold ;
+   font-size: small;
+}
+#trending{
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto auto auto;
+   font-size:xx-small;
+   
+   
+}
+#trendText{
+   margin-left: 2vw;
+}
+.at{
+   display: block;
+   
+
+}
+.social{
+   margin-bottom: 4px;
 }
